@@ -1,6 +1,5 @@
 package com.marciliojr.model;
 
-import com.marciliojr.general.AbstractAuditableObject;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Type;
@@ -15,7 +14,7 @@ import java.util.UUID;
 @EqualsAndHashCode
 @Entity
 @Table(name = "User")
-public class User extends AbstractAuditableObject {
+public class User {
 
     @Id
     @GeneratedValue(generator = "uuid2")
